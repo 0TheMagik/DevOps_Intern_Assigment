@@ -22,4 +22,4 @@ curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
   && sudo apt install ngrok
 
 ngrok config add-authtoken $(grep TOKEN "$CURRENT_DIR/.env" | cut -d '=' -f2)
-ngrok http 80
+ngrok http 80 --pooling-enabled=true
