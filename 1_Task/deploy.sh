@@ -7,8 +7,6 @@ sudo apt update
 sudo apt install -y nginx
 
 sudo cp -f "$CURRENT_DIR/index.html" /var/www/html/index.html
-# sudo chmod 755 /var/www/html/index.html
-sudo rm -f /var/www/html/index.nginx-debian.html
 
 sudo ufw allow 'Nginx HTTP'
 sudo ufw enable
