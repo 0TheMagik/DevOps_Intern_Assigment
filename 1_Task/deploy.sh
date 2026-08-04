@@ -6,7 +6,7 @@ CURRENT_DIR=$(cd "$(dirname "$0")" && pwd)
 sudo apt update
 sudo apt install -y nginx
 
-sudo ln -sfn "$CURRENT_DIR/index.html" /var/www/html/index.html
+sudo cp -f "$CURRENT_DIR/index.html" /var/www/html/index.html
 
 sudo ufw allow 'Nginx HTTP'
 sudo ufw enable
