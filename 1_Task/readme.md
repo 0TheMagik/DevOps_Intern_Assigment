@@ -1,6 +1,7 @@
 # Deployment Static web page  
 Link Access: https://dish-populace-scarcity.ngrok-free.dev/  
-
+link access ini di jalankan pada self hosted VM dan menggunakan ngrok sebagai gateway untuk access publik.
+  
 website ini di deploy dengan menggunakan bash script untuk automaticdeployment yaitu `deploy.sh`. Bash script ini akan melakukan instalasi dependency yang dibutuhkan yaitu nginx dan ngrok.
 
 Sebelum script ini dijalankan perlu dibuat file `.env` yang berisi token dari ngrok.
